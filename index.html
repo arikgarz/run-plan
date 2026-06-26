@@ -656,7 +656,8 @@ function render(w) {
   document.getElementById('qualityCard').className=dq?'card done':(isGoal?'card goal-card':'card');
   document.getElementById('qualityDoneBtn').className=dq?'done-btn active':'done-btn';
   document.getElementById('qualityDoneLabel').textContent=dq?'COMPLETED ✓':'MARK AS DONE';
-  document.getElementById('qualityLogForm').className=dq?'log-form open':'log-form open'; // always show log form
+  document.getElementById('qualityLogForm').className='log-form open';
+  document.getElementById('longLogForm').className='log-form open';
 
   // Long run card
   document.getElementById('longDayLabel').textContent=`DAY B · ${data.longDay.toUpperCase()}`;
